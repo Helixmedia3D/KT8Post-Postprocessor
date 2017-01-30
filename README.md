@@ -3,8 +3,8 @@ Post-Postprocessor voor KT8 DUAL+ 3D printer om gereedschapswissel mogelijk te m
 Download een precompiled versie of compile zelf met [.NET framework](https://www.microsoft.com/net/download)  
 
 # KT8 DUAL+ Instellingen
-```python
- G21        
+```gcode
+G21        
 G90        
 M107       
 G28
