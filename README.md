@@ -3,7 +3,7 @@ Post-Postprocessor voor KT8 DUAL+ 3D printer om gereedschapswissel mogelijk te m
 Download een precompiled versie of compile zelf met [.NET framework](https://www.microsoft.com/net/download)  
 
 # KT8 DUAL+ Instellingen
-## Cura 15.04 
+## Cura 15.04 [(download)](https://ultimaker.com/en/products/cura-software/list)  
 ### start2.gcode
 ```gcode
 G21        
