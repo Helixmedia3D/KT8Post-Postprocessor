@@ -1,0 +1,40 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="T0" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T0
+G1 X230 F6500 ; go to right parking lot
+M42 P11 S255 ; electro magnet 2 off
+G4 P300
+G1 X-2 F6500 ; go to left parking lot
+M42 P6 S0 ; electro magnet 1 on
+G4 P300</Value>
+    </Setting>
+    <Setting Name="T1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T1
+G1 X-2 F6500 ; go to left parking lot
+M42 P6 S255 ; electro magnet 1 off
+G4 P300
+G1 X230 F6500 ; go to right parking lot
+M42 P1 S0 ; electro magnet 2 on
+G4 P300</Value>
+    </Setting>
+    <Setting Name="SPEED1730" Type="System.String" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="SPEEDE3D" Type="System.String" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="CHAMBERTEMP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="STARTTOOL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">G1 X232.000 F6500 ; go to right parking lot
+M42 P57 S255 ; electro magnet 2 off</Value>
+    </Setting>
+    <Setting Name="OPWARMDWELLSEC" Type="System.String" Scope="User">
+      <Value Profile="(Default)">120</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
