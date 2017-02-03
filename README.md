@@ -4,6 +4,7 @@ Download een precompiled versie of compile zelf met [.NET framework](https://www
 
 # KT8 DUAL+ Instellingen
 ## Cura 15.04 [(download)](https://ultimaker.com/en/products/cura-software/list)  
+Gebruik de volgende instellingen in Cura:
 ### start2.gcode
 ```gcode
 G21        
