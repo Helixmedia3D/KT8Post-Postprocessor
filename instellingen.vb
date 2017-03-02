@@ -71,6 +71,20 @@ Public Class instellingen
         If ComboBox1.Text = 85 Then Label6.Text = "250"
     End Sub
 
+    Private Sub ComboBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles ComboBox1.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) Then
+            e.Handled = True
+        End If
+
+        If Not (Asc(e.KeyChar) = 8) Then
+            If Not ((Asc(e.KeyChar) >= 97 And Asc(e.KeyChar) <= 122) Or (Asc(e.KeyChar) >= 65 And Asc(e.KeyChar) <= 90)) Then
+                e.KeyChar = ChrW(0)
+                e.Handled = True
+            End If
+        End If
+
+    End Sub
+
     Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub

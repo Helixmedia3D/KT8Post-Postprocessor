@@ -56,8 +56,10 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("T0"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G1 X230 F6500 ; go to right parking lot"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"M42 P11 S255 ; electro magnet 2 off"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P300"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G1 X-2 F6500 ; go to left parking lot"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"M42 P6 S0 ; electro magnet 1 on"& _ 
-            ""&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P300")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("T0"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G1 X162 F6500 ; go to left parking lot"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P250 ;dwell 250ms"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"M42 P11 S255 ; "& _ 
+            "electro magnet 2 off"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P400 ;dwell 400ms"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G1 X-67 F6500 ; go to right parking "& _ 
+            "lot"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P250 ;dwell 250ms"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"M42 P6 S2 ; electro magnet 1 on"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P400 ;dwell 400ms"& _ 
+            "")>  _
         Public Property T0() As String
             Get
                 Return CType(Me("T0"),String)
@@ -69,8 +71,9 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("T1"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G1 X-2 F6500 ; go to left parking lot"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"M42 P6 S255 ; electro magnet 1 off"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4"& _ 
-            " P300"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G1 X230 F6500 ; go to right parking lot"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"M42 P1 S0 ; electro magnet 2 on"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P300")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("G1 X-67 F6500 ; go to right parking lot"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P250 ;dwell 250ms"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"M42 P6 S255 ; elec"& _ 
+            "tro magnet 1 off"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P400 ;dwell 400ms"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G1 X162  F6500 ; go to left parking lot"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P250 ;dwell 250ms"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"M42 P11 S2 ;electro magnet 2 on"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P400 ;dwell 400ms"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"T1"& _ 
+            "")>  _
         Public Property T1() As String
             Get
                 Return CType(Me("T1"),String)
@@ -118,7 +121,8 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("G1 X232.000 F6500 ; go to right parking lot"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"M42 P57 S255 ; electro magnet 2 off")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("T0"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G1 X-67 F6500 ; go to right parking lot"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P250 ;dwell 250ms"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"M42 P6 S2 ; el"& _ 
+            "ectro magnet T0 on"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"G4 P400 ;dwell 400ms")>  _
         Public Property STARTTOOL() As String
             Get
                 Return CType(Me("STARTTOOL"),String)
@@ -137,6 +141,18 @@ Namespace My
             End Get
             Set
                 Me("OPWARMDWELLSEC") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+        Public Property isFirstRun() As Boolean
+            Get
+                Return CType(Me("isFirstRun"),Boolean)
+            End Get
+            Set
+                Me("isFirstRun") = value
             End Set
         End Property
     End Class
